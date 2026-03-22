@@ -56,7 +56,11 @@ export default function Contact() {
               </p>
               <div className="contact-detail">
                 <div className="text-uppercase small text-warning">Office</div>
-                <div className="h6 mb-0">AK INFO Loan Consultation<br />Bihar, India</div>
+                <div className="h6 mb-0">
+                  1st Floor, Maa Kamalphool Complex<br />
+                  Jagdev Ray Complex Market, Near Mamu Bhanja<br />
+                  Jadhua, Hajipur, Vaishali, Bihar
+                </div>
               </div>
               <div className="contact-detail">
                 <div className="text-uppercase small text-warning">Office Mobile</div>
