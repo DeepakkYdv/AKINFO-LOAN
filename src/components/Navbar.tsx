@@ -42,7 +42,11 @@ export default function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className={`navbar-collapse collapse ${isOpen ? 'show' : ''}`} id="mainNav">
+        <div
+          className={`navbar-collapse nav-menu ${isOpen ? 'open' : ''}`}
+          id="mainNav"
+          hidden={!isOpen}
+        >
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-2">
             {navItems.map((item) => (
               <li key={item.href} className="nav-item">
@@ -57,6 +61,21 @@ export default function Navbar() {
             className="btn btn-dark btn-sm text-uppercase rounded-pill px-4 ms-lg-4 mt-3 mt-lg-0"
             onClick={closeMenu}
           >
+            Free Consultation
+          </a>
+        </div>
+
+        <div className="nav-menu-desktop">
+          <ul className="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-2">
+            {navItems.map((item) => (
+              <li key={item.href} className="nav-item">
+                <a className="nav-link text-uppercase small muted-copy" href={item.href}>
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <a href="#contact" className="btn btn-dark btn-sm text-uppercase rounded-pill px-4 ms-lg-4 mt-3 mt-lg-0">
             Free Consultation
           </a>
         </div>

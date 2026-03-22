@@ -64,6 +64,18 @@
     transition: opacity 0.2s ease, transform 0.2s ease;
   }
 
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-menu-desktop {
+    display: flex;
+    align-items: center;
+    flex-basis: auto;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
   .navbar-custom.scrolled {
     background: rgba(245, 242, 236, 0.92);
     backdrop-filter: blur(10px);
@@ -493,6 +505,18 @@
   }
 
   @media (max-width: 991px) {
+    .nav-menu {
+      display: none;
+    }
+
+    .nav-menu.open {
+      display: block;
+    }
+
+    .nav-menu-desktop {
+      display: none;
+    }
+
     .navbar-custom .navbar-collapse {
       margin-top: 0.9rem;
       padding: 1rem;
@@ -663,6 +687,16 @@
 
     .info-list {
       padding-left: 1rem;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .nav-menu {
+      display: none !important;
+    }
+
+    .nav-menu-desktop {
+      display: flex;
     }
   }
 }
