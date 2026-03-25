@@ -1,25 +1,12 @@
 import type { Metadata } from 'next'
-import { Cormorant_Garamond, DM_Mono } from 'next/font/google'
-import Script from 'next/script'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap-icons/font/bootstrap-icons.css'
 import './globals.css'
-
-const cormorant = Cormorant_Garamond({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600'],
-  variable: '--font-cormorant'
-})
-
-const dmMono = DM_Mono({
-  subsets: ['latin'],
-  weight: ['300', '400'],
-  variable: '--font-dm-mono'
-})
+import FadeInProvider from '@/components/ui/FadeInProvider'
 
 export const metadata: Metadata = {
-  title: 'AK INFO | Loan Consultation',
-  description: 'Expert loan consultation services for home, business, and personal loans',
+  title: 'AK Loan & Insurance Consultancy Services | Hajipur, Vaishali',
+  description:
+    'Expert loan and insurance consultancy in Hajipur, Vaishali, Bihar. Home Loan, Business Loan, Personal Loan, Life Insurance, Health Insurance and more. Director: Abhay Yadav.',
+  keywords: 'loan consultancy, insurance, home loan, personal loan, business loan, hajipur, vaishali, bihar',
 }
 
 export default function RootLayout({
@@ -29,12 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${cormorant.variable} ${dmMono.variable} font-serif`}>
+      <body>
+        <FadeInProvider />
         {children}
-        <Script
-          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-          strategy="afterInteractive"
-        />
       </body>
     </html>
   )

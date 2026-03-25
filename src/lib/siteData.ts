@@ -1,0 +1,151 @@
+export const SITE = {
+  name: 'AK Consultancy',
+  tagline: 'Loan & Insurance Services',
+  director: 'Abhay Yadav',
+  phone1: '+91 98765 43210',
+  phone2: '+91 98765 43211',
+  email: 'info@akconsultancy.in',
+  whatsapp: '919876543210',
+  address: {
+    line1: '1st Floor, Maa Kamalphool Complex',
+    line2: 'Jagdish Ray Market, Near Mamu Bhanja',
+    line3: 'Jadhua, Hajipur, Vaishali — 844101',
+    line4: 'Bihar, India',
+  },
+  hours: {
+    weekdays: 'Monday – Saturday: 9:00 AM – 7:00 PM',
+    sunday: 'Sunday: 10:00 AM – 2:00 PM',
+  },
+  mapsUrl: 'https://maps.google.com/?q=Hajipur+Vaishali+Bihar',
+}
+
+export const STATS = [
+  { num: '500+', label: 'Happy Clients' },
+  { num: '10+', label: 'Years Experience' },
+  { num: '15+', label: 'Bank Partners' },
+  { num: '₹50Cr+', label: 'Loans Processed' },
+]
+
+export const SERVICES = [
+  {
+    icon: '🏠',
+    title: 'Home Loan',
+    desc: 'Finance your dream home with the best interest rates from top banks. We assist with documentation, eligibility, and fast approval.',
+    tag: 'From 8.5% p.a.',
+  },
+  {
+    icon: '💼',
+    title: 'Business Loan',
+    desc: 'Expand your business with tailored funding solutions. MSME loans, working capital, overdraft facilities — we connect you with the right lender.',
+    tag: 'Up to ₹2 Crore',
+  },
+  {
+    icon: '👤',
+    title: 'Personal Loan',
+    desc: 'Quick unsecured loans for medical emergencies, education, travel, or any personal need. Minimal documentation, fast disbursal.',
+    tag: 'Instant Approval',
+  },
+  {
+    icon: '🚗',
+    title: 'Vehicle Loan',
+    desc: 'Two-wheeler, car, or commercial vehicle — get the best finance deals with low EMI options from leading banks and NBFCs.',
+    tag: '90% Funding',
+  },
+  {
+    icon: '🛡️',
+    title: 'Life Insurance',
+    desc: 'Secure your family\'s future with term plans, endowment policies, and ULIPs. We compare plans from all major insurers for the best premium.',
+    tag: 'All Major Insurers',
+  },
+  {
+    icon: '🏥',
+    title: 'Health Insurance',
+    desc: 'Comprehensive health coverage for individuals and families. Cashless hospitalization, critical illness riders, and affordable premiums.',
+    tag: 'Cashless Network',
+  },
+  {
+    icon: '🚘',
+    title: 'Motor Insurance',
+    desc: 'Third-party and comprehensive motor insurance for cars, bikes, and commercial vehicles. Instant policy issuance and claim support.',
+    tag: 'Instant Policy',
+  },
+  {
+    icon: '🌾',
+    title: 'Agriculture Loan',
+    desc: 'Kisan Credit Cards, crop loans, and agricultural infrastructure loans for farmers in Vaishali and surrounding areas.',
+    tag: 'Govt. Schemes',
+  },
+]
+
+export const WHY_POINTS = [
+  {
+    icon: '⚡',
+    title: 'Fast Processing',
+    desc: 'We leverage our bank relationships to ensure the fastest possible loan approvals — often within 48–72 hours.',
+  },
+  {
+    icon: '🎯',
+    title: 'Zero Hidden Charges',
+    desc: 'Completely transparent fee structure. You know exactly what you pay before you sign anything.',
+  },
+  {
+    icon: '🤝',
+    title: 'End-to-End Support',
+    desc: 'From first inquiry to final disbursement, our team is with you at every step — including document collection.',
+  },
+  {
+    icon: '🏦',
+    title: 'Multi-Bank Access',
+    desc: 'Partnerships with 15+ banks and NBFCs ensure you always get the most competitive rates available.',
+  },
+]
+
+export const PROCESS_STEPS = [
+  {
+    num: '1',
+    title: 'Free Consultation',
+    desc: 'Share your requirements. We assess your eligibility and recommend the best options.',
+  },
+  {
+    num: '2',
+    title: 'Document Collection',
+    desc: 'We guide you on required documents and assist in preparing a complete application.',
+  },
+  {
+    num: '3',
+    title: 'Bank Processing',
+    desc: 'We submit and follow up with our banking partners for the fastest possible approval.',
+  },
+  {
+    num: '4',
+    title: 'Disbursement',
+    desc: 'Funds or policy documents are delivered. We remain available for any future queries.',
+  },
+]
+
+export const LOAN_TABS = [
+  { key: 'home', label: '🏠 Home Loan', rate: 8.5, tenure: 20, amount: 1000000 },
+  { key: 'personal', label: '👤 Personal Loan', rate: 13, tenure: 5, amount: 300000 },
+  { key: 'business', label: '💼 Business Loan', rate: 11.5, tenure: 7, amount: 1000000 },
+  { key: 'vehicle', label: '🚗 Vehicle Loan', rate: 9.5, tenure: 5, amount: 600000 },
+]
+
+export const SERVICE_OPTIONS = [
+  'Home Loan',
+  'Personal Loan',
+  'Business Loan',
+  'Vehicle Loan',
+  'Life Insurance',
+  'Health Insurance',
+  'Motor Insurance',
+  'Agriculture Loan',
+  'Other',
+]
+
+export const AMOUNT_OPTIONS = [
+  'Below ₹1 Lakh',
+  '₹1 – ₹5 Lakh',
+  '₹5 – ₹20 Lakh',
+  '₹20 Lakh – ₹1 Crore',
+  'Above ₹1 Crore',
+]
