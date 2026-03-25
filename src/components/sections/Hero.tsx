@@ -10,7 +10,7 @@ export default function Hero() {
       <div className={styles.inner}>
         <div className={styles.badge}>
           <span className={styles.dot} />
-          <span>Trusted Financial Advisors - Vaishali, Bihar</span>
+          <span>Trusted Financial Advisors</span>
         </div>
 
         <h1 className={styles.heading}>

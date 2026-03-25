@@ -31,7 +31,7 @@ export default function Navbar() {
         <a href="#home" className={styles.logo}>
           <div className={styles.logoIcon}>AK</div>
           <div className={styles.logoText}>
-            <strong>AK Consultancy</strong>
+            <strong>AK Loan & Insurance Consultancy</strong>
             <span>Loan &amp; Insurance Services</span>
           </div>
         </a>

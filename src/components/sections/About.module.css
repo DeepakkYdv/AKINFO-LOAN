@@ -64,13 +64,56 @@
   padding: 36px;
 }
 
+.sliderHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.sliderLabel {
+  color: rgba(255,255,255,0.55);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+}
+
+.sliderControls {
+  display: flex;
+  gap: 10px;
+}
+
+.sliderButton {
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(201,168,76,0.35);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.06);
+  color: var(--white);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.sliderButton:hover {
+  transform: translateY(-1px);
+  background: rgba(201,168,76,0.16);
+  border-color: rgba(201,168,76,0.55);
+}
+
 .directorCard {
   background: rgba(255,255,255,0.08);
   border-radius: 14px;
   padding: 28px 24px;
-  margin-bottom: 24px;
   border: 1px solid rgba(201,168,76,0.25);
   text-align: center;
+  min-height: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .avatar {
@@ -110,6 +153,33 @@
   font-style: italic;
 }
 
+.sliderDots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 18px 0 24px;
+}
+
+.dot,
+.activeDot {
+  width: 11px;
+  height: 11px;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease, opacity 0.2s ease;
+}
+
+.dot {
+  background: rgba(255,255,255,0.28);
+}
+
+.activeDot {
+  background: var(--gold);
+  transform: scale(1.15);
+}
+
 .addressBlock {}
 
 .addressLabel {
@@ -131,4 +201,6 @@
 
 @media (max-width: 768px) {
   .grid { grid-template-columns: 1fr; gap: 40px; }
+  .visual { padding: 28px 22px; }
+  .directorCard { min-height: auto; }
 }

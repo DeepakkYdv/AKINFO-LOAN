@@ -8,7 +8,6 @@ export default function Contact() {
   const [form, setForm] = useState({
     name: '', phone: '', service: '', amount: '', message: '',
   })
-  const [submitted, setSubmitted] = useState(false)
   const [error, setError] = useState('')
 
   const handleChange = (
@@ -23,7 +22,21 @@ export default function Contact() {
       setError('Please fill in Name, Phone, and Service fields.')
       return
     }
-    setSubmitted(true)
+
+    const whatsappMessage = [
+      'Hello AK Consultancy, I would like to enquire about your services.',
+      `Name: ${form.name.trim()}`,
+      `Phone: ${form.phone.trim()}`,
+      `Service: ${form.service}`,
+      form.amount ? `Loan Amount: ${form.amount}` : '',
+      form.message.trim() ? `Message: ${form.message.trim()}` : '',
+    ]
+      .filter(Boolean)
+      .join('\n')
+
+    window.location.assign(
+      `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(whatsappMessage)}`
+    )
   }
 
   return (
@@ -50,7 +63,7 @@ export default function Contact() {
           <ContactItem icon="bi-telephone-fill" label="Call / WhatsApp">
             <p>
               <a href={`tel:${SITE.phone1}`}>{SITE.phone1}</a><br />
-              <a href={`tel:${SITE.phone2}`}>{SITE.phone2}</a>
+              {/* <a href={`tel:${SITE.phone2}`}>{SITE.phone2}</a> */}
             </p>
           </ContactItem>
 
@@ -74,7 +87,10 @@ export default function Contact() {
             <span className={styles.mapIcon}>
               <i className="bi bi-map-fill"></i>
             </span>
-            <p>Hajipur, Vaishali, Bihar</p>
+            <span className='text-center'>
+            <p>AK Loan and Insurance Consultancy services</p>
+             <p>Jadhua, Hajipur, Vaishali, Bihar 844102</p>
+            </span>
             <span className={styles.mapLink}>Open in Google Maps -&gt;</span>
           </a>
         </div>
@@ -82,71 +98,61 @@ export default function Contact() {
         <div className={styles.formBox}>
           <h3 className={styles.formTitle}>Send Us an Enquiry</h3>
 
-          {submitted ? (
-            <div className={styles.success}>
-              <div className={styles.successIcon}>
-                <i className="bi bi-check-circle-fill"></i>
-              </div>
-              <h4>Thank You!</h4>
-              <p>We have received your enquiry and will contact you shortly.</p>
-            </div>
-          ) : (
-            <div className={styles.formInner}>
-              <div className={styles.row}>
-                <Field label="Full Name">
-                  <input
-                    name="name"
-                    value={form.name}
-                    onChange={handleChange}
-                    placeholder="Your Name"
-                  />
-                </Field>
-                <Field label="Phone Number">
-                  <input
-                    name="phone"
-                    type="tel"
-                    value={form.phone}
-                    onChange={handleChange}
-                    placeholder="+91 XXXXX XXXXX"
-                  />
-                </Field>
-              </div>
-
-              <Field label="Service Interested In">
-                <select name="service" value={form.service} onChange={handleChange}>
-                  <option value="">Select Service</option>
-                  {SERVICE_OPTIONS.map((s) => (
-                    <option key={s} value={s}>{s}</option>
-                  ))}
-                </select>
-              </Field>
-
-              <Field label="Loan Amount Required">
-                <select name="amount" value={form.amount} onChange={handleChange}>
-                  <option value="">Select Range</option>
-                  {AMOUNT_OPTIONS.map((a) => (
-                    <option key={a} value={a}>{a}</option>
-                  ))}
-                </select>
-              </Field>
-
-              <Field label="Message (Optional)">
-                <textarea
-                  name="message"
-                  value={form.message}
+          <div className={styles.formInner}>
+            <div className={styles.row}>
+              <Field label="Full Name">
+                <input
+                  name="name"
+                  value={form.name}
                   onChange={handleChange}
-                  placeholder="Tell us more about your requirement..."
-                  rows={4}
+                  placeholder="Your Name"
                 />
               </Field>
-
-              {error && <p className={styles.error}>{error}</p>}
-
-              <button className={styles.submitBtn} onClick={handleSubmit}>
-                Submit Enquiry -&gt;
-              </button>
+              <Field label="Phone Number">
+                <input
+                  name="phone"
+                  type="tel"
+                  value={form.phone}
+                  onChange={handleChange}
+                  placeholder="+91 XXXXX XXXXX"
+                />
+              </Field>
             </div>
-          )}
+
+            <Field label="Service Interested In">
+              <select name="service" value={form.service} onChange={handleChange}>
+                <option value="">Select Service</option>
+                {SERVICE_OPTIONS.map((s) => (
+                  <option key={s} value={s}>{s}</option>
+                ))}
+              </select>
+            </Field>
+
+            <Field label="Loan Amount Required">
+              <select name="amount" value={form.amount} onChange={handleChange}>
+                <option value="">Select Range</option>
+                {AMOUNT_OPTIONS.map((a) => (
+                  <option key={a} value={a}>{a}</option>
+                ))}
+              </select>
+            </Field>
+
+            <Field label="Message (Optional)">
+              <textarea
+                name="message"
+                value={form.message}
+                onChange={handleChange}
+                placeholder="Tell us more about your requirement..."
+                rows={4}
+              />
+            </Field>
+
+            {error && <p className={styles.error}>{error}</p>}
+
+            <button className={styles.submitBtn} onClick={handleSubmit}>
+              Send Message  →
+            </button>
+          </div>
         </div>
       </div>
     </section>

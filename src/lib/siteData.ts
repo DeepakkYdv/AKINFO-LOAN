@@ -2,10 +2,11 @@ export const SITE = {
   name: 'AK Consultancy',
   tagline: 'Loan & Insurance Services',
   director: 'Abhay Yadav',
-  phone1: '+91 98765 43210',
-  phone2: '+91 98765 43211',
-  email: 'info@akconsultancy.in',
-  whatsapp: '919876543210',
+  owner: 'Kanchan Kumari',
+  phone1: '+91 7520864943',
+  // phone2: '+91 98765 43211',
+  email: 'akloancons@gmail.com',
+  whatsapp: '7520864943',
   address: {
     line1: '1st Floor, Maa Kamalphool Complex',
     line2: 'Jagdish Ray Market, Near Mamu Bhanja',
@@ -16,7 +17,7 @@ export const SITE = {
     weekdays: 'Monday - Saturday: 9:00 AM - 7:00 PM',
     sunday: 'Sunday: 10:00 AM - 2:00 PM',
   },
-  mapsUrl: 'https://maps.google.com/?q=Hajipur+Vaishali+Bihar',
+  mapsUrl: 'https://maps.google.com/?q=M6GH+F6F Hazrat Maamu-Bhaanja Mazaar, Jadhua Rd,Hajipur,Minapur,Bihar 84410',
 }
 
 export const STATS = [
