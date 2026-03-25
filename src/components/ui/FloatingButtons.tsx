@@ -10,10 +10,10 @@ export default function FloatingButtons() {
         rel="noreferrer"
         className={`${styles.btn} ${styles.whatsapp}`}
       >
-        <span>💬</span> WhatsApp Us
+        <i className="bi bi-whatsapp"></i> WhatsApp Us
       </a>
       <a href={`tel:${SITE.phone1}`} className={styles.btn}>
-        <span>📞</span> Call Now
+        <i className="bi bi-telephone-fill"></i> Call Now
       </a>
     </div>
   )

@@ -9,12 +9,12 @@ export const SITE = {
   address: {
     line1: '1st Floor, Maa Kamalphool Complex',
     line2: 'Jagdish Ray Market, Near Mamu Bhanja',
-    line3: 'Jadhua, Hajipur, Vaishali — 844101',
+    line3: 'Jadhua, Hajipur, Vaishali - 844101',
     line4: 'Bihar, India',
   },
   hours: {
-    weekdays: 'Monday – Saturday: 9:00 AM – 7:00 PM',
-    sunday: 'Sunday: 10:00 AM – 2:00 PM',
+    weekdays: 'Monday - Saturday: 9:00 AM - 7:00 PM',
+    sunday: 'Sunday: 10:00 AM - 2:00 PM',
   },
   mapsUrl: 'https://maps.google.com/?q=Hajipur+Vaishali+Bihar',
 }
@@ -23,54 +23,54 @@ export const STATS = [
   { num: '500+', label: 'Happy Clients' },
   { num: '10+', label: 'Years Experience' },
   { num: '15+', label: 'Bank Partners' },
-  { num: '₹50Cr+', label: 'Loans Processed' },
+  { num: 'Rs50Cr+', label: 'Loans Processed' },
 ]
 
 export const SERVICES = [
   {
-    icon: '🏠',
+    icon: 'bi-house-door-fill',
     title: 'Home Loan',
     desc: 'Finance your dream home with the best interest rates from top banks. We assist with documentation, eligibility, and fast approval.',
     tag: 'From 8.5% p.a.',
   },
   {
-    icon: '💼',
+    icon: 'bi-briefcase-fill',
     title: 'Business Loan',
-    desc: 'Expand your business with tailored funding solutions. MSME loans, working capital, overdraft facilities — we connect you with the right lender.',
-    tag: 'Up to ₹2 Crore',
+    desc: 'Expand your business with tailored funding solutions. MSME loans, working capital, overdraft facilities - we connect you with the right lender.',
+    tag: 'Up to Rs2 Crore',
   },
   {
-    icon: '👤',
+    icon: 'bi-person-fill',
     title: 'Personal Loan',
     desc: 'Quick unsecured loans for medical emergencies, education, travel, or any personal need. Minimal documentation, fast disbursal.',
     tag: 'Instant Approval',
   },
   {
-    icon: '🚗',
+    icon: 'bi-car-front-fill',
     title: 'Vehicle Loan',
-    desc: 'Two-wheeler, car, or commercial vehicle — get the best finance deals with low EMI options from leading banks and NBFCs.',
+    desc: 'Two-wheeler, car, or commercial vehicle - get the best finance deals with low EMI options from leading banks and NBFCs.',
     tag: '90% Funding',
   },
   {
-    icon: '🛡️',
+    icon: 'bi-shield-lock-fill',
     title: 'Life Insurance',
     desc: 'Secure your family\'s future with term plans, endowment policies, and ULIPs. We compare plans from all major insurers for the best premium.',
     tag: 'All Major Insurers',
   },
   {
-    icon: '🏥',
+    icon: 'bi-heart-pulse-fill',
     title: 'Health Insurance',
     desc: 'Comprehensive health coverage for individuals and families. Cashless hospitalization, critical illness riders, and affordable premiums.',
     tag: 'Cashless Network',
   },
   {
-    icon: '🚘',
+    icon: 'bi-car-front',
     title: 'Motor Insurance',
     desc: 'Third-party and comprehensive motor insurance for cars, bikes, and commercial vehicles. Instant policy issuance and claim support.',
     tag: 'Instant Policy',
   },
   {
-    icon: '🌾',
+    icon: 'bi-tree-fill',
     title: 'Agriculture Loan',
     desc: 'Kisan Credit Cards, crop loans, and agricultural infrastructure loans for farmers in Vaishali and surrounding areas.',
     tag: 'Govt. Schemes',
@@ -79,22 +79,22 @@ export const SERVICES = [
 
 export const WHY_POINTS = [
   {
-    icon: '⚡',
+    icon: 'bi-lightning-charge-fill',
     title: 'Fast Processing',
-    desc: 'We leverage our bank relationships to ensure the fastest possible loan approvals — often within 48–72 hours.',
+    desc: 'We leverage our bank relationships to ensure the fastest possible loan approvals - often within 48-72 hours.',
   },
   {
-    icon: '🎯',
+    icon: 'bi-bullseye',
     title: 'Zero Hidden Charges',
     desc: 'Completely transparent fee structure. You know exactly what you pay before you sign anything.',
   },
   {
-    icon: '🤝',
+    icon: 'bi-people-fill',
     title: 'End-to-End Support',
-    desc: 'From first inquiry to final disbursement, our team is with you at every step — including document collection.',
+    desc: 'From first inquiry to final disbursement, our team is with you at every step - including document collection.',
   },
   {
-    icon: '🏦',
+    icon: 'bi-bank2',
     title: 'Multi-Bank Access',
     desc: 'Partnerships with 15+ banks and NBFCs ensure you always get the most competitive rates available.',
   },
@@ -124,10 +124,10 @@ export const PROCESS_STEPS = [
 ]
 
 export const LOAN_TABS = [
-  { key: 'home', label: '🏠 Home Loan', rate: 8.5, tenure: 20, amount: 1000000 },
-  { key: 'personal', label: '👤 Personal Loan', rate: 13, tenure: 5, amount: 300000 },
-  { key: 'business', label: '💼 Business Loan', rate: 11.5, tenure: 7, amount: 1000000 },
-  { key: 'vehicle', label: '🚗 Vehicle Loan', rate: 9.5, tenure: 5, amount: 600000 },
+  { key: 'home', label: 'Home Loan', rate: 8.5, tenure: 20, amount: 1000000 },
+  { key: 'personal', label: 'Personal Loan', rate: 13, tenure: 5, amount: 300000 },
+  { key: 'business', label: 'Business Loan', rate: 11.5, tenure: 7, amount: 1000000 },
+  { key: 'vehicle', label: 'Vehicle Loan', rate: 9.5, tenure: 5, amount: 600000 },
 ]
 
 export const SERVICE_OPTIONS = [
@@ -143,9 +143,9 @@ export const SERVICE_OPTIONS = [
 ]
 
 export const AMOUNT_OPTIONS = [
-  'Below ₹1 Lakh',
-  '₹1 – ₹5 Lakh',
-  '₹5 – ₹20 Lakh',
-  '₹20 Lakh – ₹1 Crore',
-  'Above ₹1 Crore',
+  'Below Rs1 Lakh',
+  'Rs1 - Rs5 Lakh',
+  'Rs5 - Rs20 Lakh',
+  'Rs20 Lakh - Rs1 Crore',
+  'Above Rs1 Crore',
 ]

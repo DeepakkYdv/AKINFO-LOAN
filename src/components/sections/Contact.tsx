@@ -37,9 +37,8 @@ export default function Contact() {
       </div>
 
       <div className={`${styles.grid} fade-in`}>
-        {/* Left — Contact Info */}
         <div className={styles.info}>
-          <ContactItem icon="📍" label="Office Address">
+          <ContactItem icon="bi-geo-alt-fill" label="Office Address">
             <p>
               {SITE.address.line1}<br />
               {SITE.address.line2}<br />
@@ -48,44 +47,46 @@ export default function Contact() {
             </p>
           </ContactItem>
 
-          <ContactItem icon="📞" label="Call / WhatsApp">
+          <ContactItem icon="bi-telephone-fill" label="Call / WhatsApp">
             <p>
               <a href={`tel:${SITE.phone1}`}>{SITE.phone1}</a><br />
               <a href={`tel:${SITE.phone2}`}>{SITE.phone2}</a>
             </p>
           </ContactItem>
 
-          <ContactItem icon="✉️" label="Email Us">
+          <ContactItem icon="bi-envelope-fill" label="Email Us">
             <p><a href={`mailto:${SITE.email}`}>{SITE.email}</a></p>
           </ContactItem>
 
-          <ContactItem icon="🕐" label="Office Hours">
+          <ContactItem icon="bi-clock-fill" label="Office Hours">
             <p>
               {SITE.hours.weekdays}<br />
               {SITE.hours.sunday}
             </p>
           </ContactItem>
 
-          {/* Map placeholder */}
           <a
             href={SITE.mapsUrl}
             target="_blank"
             rel="noreferrer"
             className={styles.mapBox}
           >
-            <span className={styles.mapIcon}>🗺️</span>
+            <span className={styles.mapIcon}>
+              <i className="bi bi-map-fill"></i>
+            </span>
             <p>Hajipur, Vaishali, Bihar</p>
-            <span className={styles.mapLink}>Open in Google Maps →</span>
+            <span className={styles.mapLink}>Open in Google Maps -&gt;</span>
           </a>
         </div>
 
-        {/* Right — Form */}
         <div className={styles.formBox}>
           <h3 className={styles.formTitle}>Send Us an Enquiry</h3>
 
           {submitted ? (
             <div className={styles.success}>
-              <div className={styles.successIcon}>✅</div>
+              <div className={styles.successIcon}>
+                <i className="bi bi-check-circle-fill"></i>
+              </div>
               <h4>Thank You!</h4>
               <p>We have received your enquiry and will contact you shortly.</p>
             </div>
@@ -142,7 +143,7 @@ export default function Contact() {
               {error && <p className={styles.error}>{error}</p>}
 
               <button className={styles.submitBtn} onClick={handleSubmit}>
-                Submit Enquiry →
+                Submit Enquiry -&gt;
               </button>
             </div>
           )}
@@ -152,7 +153,6 @@ export default function Contact() {
   )
 }
 
-/* ── Sub-components ── */
 function ContactItem({
   icon, label, children,
 }: {
@@ -162,7 +162,9 @@ function ContactItem({
 }) {
   return (
     <div className={styles.item}>
-      <div className={styles.itemIcon}>{icon}</div>
+      <div className={styles.itemIcon}>
+        <i className={`bi ${icon}`}></i>
+      </div>
       <div className={styles.itemText}>
         <span>{label}</span>
         {children}

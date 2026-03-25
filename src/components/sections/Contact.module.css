@@ -38,6 +38,12 @@
   font-size: 18px;
 }
 
+.itemIcon i,
+.mapIcon i,
+.successIcon i {
+  line-height: 1;
+}
+
 .itemText span {
   display: block;
   font-size: 11px;

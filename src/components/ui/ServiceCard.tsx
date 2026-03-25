@@ -10,7 +10,9 @@ interface ServiceCardProps {
 export default function ServiceCard({ icon, title, desc, tag }: ServiceCardProps) {
   return (
     <div className={styles.card}>
-      <div className={styles.icon}>{icon}</div>
+      <div className={styles.icon}>
+        <i className={`bi ${icon}`}></i>
+      </div>
       <h3 className={styles.title}>{title}</h3>
       <p className={styles.desc}>{desc}</p>
       <span className={styles.tag}>{tag}</span>

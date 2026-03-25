@@ -8,35 +8,30 @@ export default function Hero() {
       <div className={styles.accent} />
 
       <div className={styles.inner}>
-        {/* Badge */}
         <div className={styles.badge}>
           <span className={styles.dot} />
-          <span>Trusted Financial Advisors — Vaishali, Bihar</span>
+          <span>Trusted Financial Advisors - Vaishali, Bihar</span>
         </div>
 
-        {/* Heading */}
         <h1 className={styles.heading}>
           Your Path to <em>Financial</em> Freedom Starts Here
         </h1>
 
-        {/* Subtext */}
         <p className={styles.sub}>
           AK Loan &amp; Insurance Consultancy Services provides expert guidance on home
-          loans, personal loans, business loans, and all types of insurance — making
+          loans, personal loans, business loans, and all types of insurance - making
           finance simple and accessible for every family.
         </p>
 
-        {/* CTAs */}
         <div className={styles.actions}>
           <a href="#contact" className="btn-primary">
-            📞 Get Free Consultation
+            <i className="bi bi-telephone-fill"></i> Get Free Consultation
           </a>
           <a href="#calculator" className="btn-secondary">
-            📊 Loan Calculator
+            <i className="bi bi-calculator-fill"></i> Loan Calculator
           </a>
         </div>
 
-        {/* Stats */}
         <div className={styles.stats}>
           {STATS.map((s) => (
             <div key={s.label} className={styles.stat}>
