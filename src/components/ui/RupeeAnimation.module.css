@@ -1,0 +1,211 @@
+.scene {
+  position: relative;
+  min-height: 560px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orb {
+  position: absolute;
+  inset: 14% 10% auto auto;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201, 168, 76, 0.22) 0%, rgba(201, 168, 76, 0.08) 42%, rgba(201, 168, 76, 0) 72%);
+  filter: blur(2px);
+}
+
+.floatToken {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  color: rgba(232, 201, 122, 0.95);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(201, 168, 76, 0.22);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+  animation: drift 6s ease-in-out infinite;
+}
+
+.small {
+  width: 46px;
+  height: 46px;
+  font-size: 22px;
+}
+
+.medium {
+  width: 58px;
+  height: 58px;
+  font-size: 28px;
+}
+
+.large {
+  width: 70px;
+  height: 70px;
+  font-size: 34px;
+}
+
+.card {
+  position: relative;
+  width: min(100%, 470px);
+  padding: 28px;
+  border-radius: 30px;
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.12), rgba(17, 34, 64, 0.4));
+  border: 1px solid rgba(201, 168, 76, 0.22);
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(18px);
+  overflow: hidden;
+}
+
+.cardGlow {
+  position: absolute;
+  top: -80px;
+  right: -40px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(232, 201, 122, 0.24) 0%, rgba(232, 201, 122, 0) 72%);
+}
+
+.header {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.eyebrow {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+}
+
+.title {
+  margin-top: 8px;
+  max-width: 240px;
+  color: var(--white);
+  font-family: var(--font-serif);
+  font-size: 28px;
+  line-height: 1.15;
+}
+
+.badge {
+  flex-shrink: 0;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: rgba(201, 168, 76, 0.14);
+  border: 1px solid rgba(201, 168, 76, 0.28);
+  color: var(--gold-light);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+
+.rupeeRing {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  margin: 34px 0 30px;
+}
+
+.ringOuter {
+  width: 190px;
+  height: 190px;
+  padding: 14px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, rgba(201, 168, 76, 0.3), rgba(255, 255, 255, 0.06));
+  box-shadow:
+    0 0 0 1px rgba(201, 168, 76, 0.18),
+    0 24px 50px rgba(0, 0, 0, 0.24);
+  animation: pulse-ring 4.2s ease-in-out infinite;
+}
+
+.ringInner {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top, rgba(255, 255, 255, 0.22), rgba(10, 22, 40, 0.9));
+  color: var(--gold-light);
+  font-family: var(--font-serif);
+  font-size: 88px;
+  font-weight: 900;
+  text-shadow: 0 0 24px rgba(232, 201, 122, 0.3);
+}
+
+.metrics {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.metricCard {
+  padding: 14px 12px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.metricLabel {
+  display: block;
+  color: rgba(255, 255, 255, 0.56);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+
+.metricValue {
+  display: block;
+  margin-top: 8px;
+  color: var(--white);
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+@keyframes drift {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+@keyframes pulse-ring {
+  0%, 100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.04);
+  }
+}
+
+@media (max-width: 1199px) {
+  .scene {
+    min-height: 500px;
+  }
+
+  .card {
+    width: min(100%, 420px);
+  }
+
+  .metrics {
+    grid-template-columns: 1fr;
+  }
+}

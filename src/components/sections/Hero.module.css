@@ -3,12 +3,18 @@
   background: linear-gradient(160deg, var(--navy) 0%, var(--navy-mid) 55%, #0d2b4e 100%);
   position: relative;
   overflow: hidden;
-  display: flex;
-  align-items: center;
   padding: 100px 5% 60px;
 }
 
-
+.layout {
+  position: relative;
+  z-index: 1;
+  min-height: calc(100vh - 160px);
+  display: grid;
+  grid-template-columns: minmax(0, 680px) minmax(320px, 1fr);
+  align-items: center;
+  gap: 48px;
+}
 
 .bgPattern {
   position: absolute;
@@ -32,8 +38,12 @@
 
 .inner {
   max-width: 680px;
+}
+
+.visual {
   position: relative;
-  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* Badge */
@@ -124,4 +134,20 @@
   .stats { gap: 24px; }
   .actions { flex-direction: column; }
   .actions a { text-align: center; justify-content: center; }
+}
+
+@media (max-width: 1023px) {
+  .hero {
+    display: flex;
+    align-items: center;
+  }
+
+  .layout {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .visual {
+    display: none;
+  }
 }

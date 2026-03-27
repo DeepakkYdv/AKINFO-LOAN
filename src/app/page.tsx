@@ -1,5 +1,6 @@
 import Navbar from '@/components/sections/Navbar'
 import Hero from '@/components/sections/Hero'
+import BankScroller from '@/components/sections/BankScroller'
 import Services from '@/components/sections/Services'
 import About from '@/components/sections/About'
 import Calculator from '@/components/sections/Calculator'
@@ -14,6 +15,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <BankScroller />
         <Services />
         <About />
         <Calculator />
