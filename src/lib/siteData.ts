@@ -76,6 +76,42 @@ export const SERVICES = [
     desc: 'Kisan Credit Cards, crop loans, and agricultural infrastructure loans for farmers in Vaishali and surrounding areas.',
     tag: 'Govt. Schemes',
   },
+  {
+    icon: 'bi-airplane-fill',
+    title: 'Travel Insurance',
+    desc: 'Stay protected during domestic and international trips with coverage for medical emergencies, trip delays, baggage loss, and more.',
+    tag: 'Worldwide Cover',
+  },
+  {
+    icon: 'bi-coin',
+    title: 'Gold Loan',
+    desc: 'Unlock quick funds against your gold with competitive interest rates, simple documentation, and fast disbursal support.',
+    tag: 'Quick Disbursal',
+  },
+  {
+    icon: 'bi-currency-exchange',
+    title: 'Foreign Currencies',
+    desc: 'Buy and sell major foreign currencies for travel, education, business, and other approved international requirements.',
+    tag: 'Live Exchange Rates',
+  },
+  {
+    icon: 'bi-credit-card-2-front-fill',
+    title: 'Travel / Forex Card',
+    desc: 'Get secure prepaid travel cards loaded with foreign currency for international trips, education, and business travel.',
+    tag: 'Multi-Currency Cards',
+  },
+  {
+    icon: 'bi-send-fill',
+    title: 'Send Money Abroad',
+    desc: 'Fast and compliant outward remittance support for tuition fees, family maintenance, medical needs, and other overseas payments.',
+    tag: 'Safe Remittance',
+  },
+  {
+    icon: 'bi-globe-central-south-asia',
+    title: 'Travel & Holiday Services',
+    desc: 'Complete travel assistance including holiday packages, visa support, air tickets, and trip planning for domestic and international travel.',
+    tag: 'Visa, Tickets & Tours',
+  },
 ]
 
 export const WHY_POINTS = [
@@ -140,6 +176,12 @@ export const SERVICE_OPTIONS = [
   'Health Insurance',
   'Motor Insurance',
   'Agriculture Loan',
+  'Travel Insurance',
+  'Gold Loan',
+  'Foreign Currencies',
+  'Travel / Forex Card',
+  'Send Money Abroad',
+  'Travel & Holiday Services',
   'Other',
 ]
 
