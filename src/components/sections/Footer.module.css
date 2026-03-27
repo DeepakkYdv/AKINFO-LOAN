@@ -47,10 +47,53 @@
 
 .logoText span {
   display: block;
-  font-size: 11px;
-  color: var(--gold);
-  letter-spacing: 1.5px;
+}
+
+.partnerTag {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  padding: 6px 12px;
+  border: 1px solid rgba(201, 168, 76, 0.3);
+  border-radius: 999px;
+  background:
+    linear-gradient(135deg, rgba(201, 168, 76, 0.16), rgba(255, 255, 255, 0.04));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  width: fit-content;
+}
+
+.partnerTag em {
+  font-style: normal;
+  font-size: 10px;
+  color: rgba(255,255,255,0.62);
+  letter-spacing: 1.8px;
   text-transform: uppercase;
+}
+
+.partnerTag strong {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--gold-light);
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 12px;
+}
+
+.partnerTag strong::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  background: var(--gold);
+  box-shadow: 0 0 12px rgba(201, 168, 76, 0.8);
+  transform: translateY(-50%);
 }
 
 .tagline {

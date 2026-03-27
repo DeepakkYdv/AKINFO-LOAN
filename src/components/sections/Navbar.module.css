@@ -23,6 +23,7 @@
   align-items: center;
   gap: 12px;
   text-decoration: none;
+  min-width: 0;
 }
 
 .logoIcon {
@@ -41,6 +42,9 @@
 
 .logoText {
   color: var(--white);
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
 }
 
 .logoText strong {
@@ -48,15 +52,53 @@
   font-family: var(--font-serif);
   font-size: 17px;
   letter-spacing: 0.5px;
+  line-height: 1.1;
 }
 
 .logoText span {
   display: block;
-  font-size: 11px;
-  color: var(--gold);
-  letter-spacing: 1.5px;
+}
+
+.partnerLine {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 4px;
+  white-space: nowrap;
+}
+
+.partnerLine em {
+  font-style: normal;
+  font-size: 9px;
+  color: rgba(255, 255, 255, 0.52);
+  letter-spacing: 1.35px;
   text-transform: uppercase;
 }
+
+.partnerLine strong {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--gold-light);
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 11px;
+}
+
+.partnerLine strong::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 6px;
+  height: 1px;
+  border-radius: 999px;
+  background: rgba(201, 168, 76, 0.75);
+  transform: translateY(-50%);
+}
+
 
 /* Desktop Nav */
 .navLinks {
@@ -189,4 +231,7 @@
 @media (max-width: 900px) {
   .navLinks { display: none; }
   .hamburger { display: flex; }
+  .partnerLine {
+    gap: 7px;
+  }
 }

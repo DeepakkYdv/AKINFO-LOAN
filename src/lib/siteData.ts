@@ -21,10 +21,10 @@ export const SITE = {
 }
 
 export const STATS = [
-  { num: '500+', label: 'Happy Clients' },
+  { num: '10k+', label: 'Happy Clients' },
   { num: '10+', label: 'Years Experience' },
-  { num: '15+', label: 'Bank Partners' },
-  { num: 'Rs50Cr+', label: 'Loans Processed' },
+  { num: '150+', label: 'Bank Partners' },
+  { num: 'Rs100Cr+', label: 'Loans Processed' },
 ]
 
 export const SERVICES = [
@@ -97,7 +97,7 @@ export const WHY_POINTS = [
   {
     icon: 'bi-bank2',
     title: 'Multi-Bank Access',
-    desc: 'Partnerships with 15+ banks and NBFCs ensure you always get the most competitive rates available.',
+    desc: 'Partnerships with 150+ banks and NBFCs ensure you always get the most competitive rates available.',
   },
 ]
 
