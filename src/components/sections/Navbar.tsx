@@ -31,10 +31,10 @@ export default function Navbar() {
           <div className={styles.logoIcon}>AK</div>
           <div className={styles.logoText}>
             <strong>AK Loan & Insurance Consultant</strong>
-            <span className={styles.partnerLine}>
+            {/* <span className={styles.partnerLine}>
               <em>Partnered By</em>
               <strong>Urban Money</strong>
-            </span>
+            </span> */}
           </div>
         </a>
 
