@@ -5,7 +5,7 @@ export const SITE = {
   owner: 'Kanchan Kumari',
   phone1: '+91 7520864943',
   // phone2: '+91 98765 43211',
-  email: 'akloancons@gmail.com',
+  email: 'support@akloan.co.in',
   whatsapp: '7520864943',
   address: {
     line1: '1st Floor, Maa Kamalphool Complex',
