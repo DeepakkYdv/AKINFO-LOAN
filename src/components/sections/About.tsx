@@ -7,7 +7,7 @@ import styles from './About.module.css'
 export default function About() {
   const profiles = [    
     {
-      initials: 'KK',
+      initials: 'KY',
       name: SITE.owner,
       title: 'Owner',
       quote:

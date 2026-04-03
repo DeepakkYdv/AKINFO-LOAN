@@ -63,6 +63,7 @@ export default function Contact() {
           <ContactItem icon="bi-telephone-fill" label="Call / WhatsApp">
             <p>
               <a href={`tel:${SITE.phone1}`}>{SITE.phone1}</a><br />
+              <a href={`tel:${SITE.landline}`}>{SITE.landline}</a><br />
               {/* <a href={`tel:${SITE.phone2}`}>{SITE.phone2}</a> */}
             </p>
           </ContactItem>

@@ -2,11 +2,12 @@ export const SITE = {
   name: 'AK Consultancy',
   tagline: 'Loan & Insurance Services',
   director: 'Kanchan Yadav',
-  owner: 'Kanchan Kumari',
+  owner: 'Kanchan Yadav',
   phone1: '+91 7520864943',
   // phone2: '+91 98765 43211',
   email: 'support@akloan.co.in',
   whatsapp: '7520864943',
+  landline: '06224457462',
   address: {
     line1: '1st Floor, Maa Kamalphool Complex',
     line2: 'Jagdish Ray Market, Near Mamu Bhanja',
