@@ -25,7 +25,7 @@ export default function Hero() {
               <div className="about-kicker mb-2">About AK INFO</div>
               <h2 className="section-title fw-light mb-3">Trusted guidance with a personal touch.</h2>
               <p className="muted-copy body-lg mb-4">
-                Led by Director Abhay Yadav, we help clients move from uncertainty to action with practical advice, lender coordination, and insurance planning that stays easy to understand.
+                Led by Director Kanchan Yadav, we help clients move from uncertainty to action with practical advice, lender coordination, and insurance planning that stays easy to understand.
               </p>
               <div className="row g-3 position-relative">
                 <div className="col-sm-6">

@@ -13,13 +13,13 @@ export default function About() {
       quote:
         'We believe financial guidance should feel personal, trustworthy, and easy to understand for every client who walks through our door.',
     },
-    {
-      initials: 'AY',
-      name: SITE.director,
-      title: 'Director & Financial Advisor',
-      quote:
-        'Our mission is simple - help every family in Bihar access affordable finance and protection, without confusion or delays.',
-    },
+    // {
+    //   initials: 'AY',
+    //   name: SITE.director,
+    //   title: 'Director & Financial Advisor',
+    //   quote:
+    //     'Our mission is simple - help every family in Bihar access affordable finance and protection, without confusion or delays.',
+    // },
   ]
 
   const [activeProfile, setActiveProfile] = useState(0)

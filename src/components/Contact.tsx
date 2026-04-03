@@ -77,12 +77,12 @@ export default function Contact() {
                 </div>
               </div>
               <div className="contact-detail">
-                <div className="text-uppercase small text-warning">Director</div>
-                <div className="h6 mb-0">Abhay Yadav</div>
+                <div className="text-uppercase small text-warning">Owner</div>
+                <div className="h6 mb-0">Kanchan Yadav</div>
               </div>
               <div className="contact-detail">
                 <div className="text-uppercase small text-warning">Email</div>
-                <div className="h6 mb-0">info@akinfoloan.com</div>
+                <div className="h6 mb-0">support@akloan.co.in</div>
               </div>
               <div className="contact-detail">
                 <div className="text-uppercase small text-warning">Hours</div>
