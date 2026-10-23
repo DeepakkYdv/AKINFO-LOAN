@@ -11,6 +11,12 @@ const NAV_LINKS = [
   { href: '#process', label: 'Process' },
 ]
 
+const BRANCH_LINKS = [
+  { href: '#contact', label: 'Gurugram' },
+  { href: '#contact', label: 'Patna' },
+  { href: '#contact', label: 'Hajipur' },
+]
+
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
@@ -46,6 +52,18 @@ export default function Navbar() {
             </li>
           ))}
           <li>
+            <details className={styles.branchMenu}>
+              <summary className={styles.branchTrigger}>Branches</summary>
+            <ul className={styles.branchDropdown}>
+              {BRANCH_LINKS.map((branch) => (
+                <li key={branch.label}>
+                  <a href={branch.href}>{branch.label}</a>
+                </li>
+              ))}
+            </ul>
+            </details>
+          </li>
+          <li>
             <a href="#contact" className={styles.navCta}>Contact Us</a>
           </li>
         </ul>
@@ -69,6 +87,14 @@ export default function Navbar() {
             {l.label}
           </a>
         ))}
+        <div className={styles.mobileBranches}>
+          <span className={styles.mobileBranchLabel}>Branches</span>
+          {BRANCH_LINKS.map((branch) => (
+            <a key={branch.label} href={branch.href} onClick={closeMenu}>
+              {branch.label}
+            </a>
+          ))}
+        </div>
         <a href="#contact" onClick={closeMenu} className={styles.mobileCta}>
           Contact Us
         </a>
