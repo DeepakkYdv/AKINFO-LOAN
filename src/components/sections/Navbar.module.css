@@ -138,6 +138,7 @@
 
 .branchMenu {
   position: relative;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .branchTrigger {
