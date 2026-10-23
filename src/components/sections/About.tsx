@@ -7,7 +7,7 @@ import styles from './About.module.css'
 export default function About() {
   const profiles = [    
     {
-      initials: 'KY',
+      initials: 'KK',
       name: SITE.owner,
       title: 'Owner',
       quote:
@@ -46,7 +46,7 @@ useEffect(() => {
           Why Choose Us
         </span>
         <h2 className="section-title white">
-          Trusted by Millions of<br />Families in Bihar
+          Trusted by Millions of<br />Families in India
         </h2>
         <div className="divider" />
         <p className="section-desc white">
